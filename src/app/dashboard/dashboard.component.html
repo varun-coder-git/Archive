@@ -1,0 +1,29 @@
+
+<div>
+    <tabset>
+      <tab heading="Bar Graph" id="tab1">
+
+        <div class="chart-div">
+            <div class="chart-container">
+                <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions"
+                    [legend]="barChartLegend" [chartType]="barChartType">
+                </canvas>
+            </div>
+        </div>
+      </tab>
+      <tab heading="Doughnut Chart">
+      <div>
+        <div class="chart-container" style="margin-top: 100px;">
+            <canvas baseChart [data]="doughnutChartData" [labels]="doughnutChartLabels"
+                [chartType]="doughnutChartType"></canvas>
+        </div>
+    </div>
+    </tab>
+      <tab heading="GridView">
+        <app-griddisplay></app-griddisplay>
+          
+
+      </tab>
+    </tabset>
+  </div>
+
